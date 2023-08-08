@@ -4,21 +4,27 @@
   <meta charset="UTF-8" />
   <title>함수형 프로그래밍 펀더멘탈</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=400" type="image/xml+svg" />
-  <script src="./src/main.js" type="module"></script>
+  <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=400" type="image/xml+svg" />
+  <script type="module" src="/src/main.js"></script>
 </head>
 <body>
+  
   <noscript>이 애플리케이션은 JavaScript가 활성화되어야 실행됩니다.</noscript>
 
+  <div class="container">
+    <!-- JavaScript로 동적 마크업, 스타일링, 스크립팅 -->
+    <div id="demo" />
 
-<!-- JavaScript로 동적 마크업, 스타일링, 스크립팅 -->
-<!-- 컨테이너 요소 -->
-<div id="demo"></div>
+    <!-- Web Component로 동적 마크업, 스타일링, 스크립팅 -->
+    <!-- attribute => props -->
+    <counter-button count="99" step="-23"></counter-button>
+  </div>
 
-
-
-<!-- Web Component로 동적 마크업, 스타일링, 스크립팅 -->
-
+  <div class="output">
+    <span class="functional">1</span>
+    <span class="object-oriented">2</span>
+    <span class="web-component">3</span>
+  </div>
 
 </body>
 </html>
